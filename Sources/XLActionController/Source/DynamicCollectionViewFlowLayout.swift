@@ -142,7 +142,7 @@ open class DynamicCollectionViewFlowLayout: UICollectionViewFlowLayout {
             return nil
         }
         
-        let delegate: UICollectionViewDelegateFlowLayout = collectionView.delegate as? UICollectionViewDelegateFlowLayout ?? UICollectionViewDelegateFlowLayout()
+        let delegate: UICollectionViewDelegateFlowLayout = collectionView.delegate as! UICollectionViewDelegateFlowLayout
         
         let collectionItemSize = delegate.collectionView!(collectionView, layout: self, sizeForItemAt: indexPath)
         
